@@ -19,7 +19,7 @@ db.get('/:db_id', (req, res) => {
         const result = json.filter((db) => db.db_id === dbId);
         return result.length > 0
           ? res.json(result)
-          : res.json('No tip with that ID');
+          : res.json('No note with that ID');
       });
   });
 
